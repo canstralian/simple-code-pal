@@ -22,6 +22,13 @@
         rows="6" 
         placeholder="e.g. Create a Python function to reverse a string"
         aria-label="Code description input"></textarea>
+      <label for="taskSelector">Select task type:</label>
+      <select id="taskSelector" aria-label="Task type selector">
+        <option value="explain">Explain</option>
+        <option value="debug">Debug</option>
+        <option value="refactor">Refactor</option>
+        <option value="optimize">Optimize</option>
+      </select>
       <button id="generateBtn" class="primary-btn">Generate Code</button>
     </div>
 

@@ -9,6 +9,7 @@ const descriptionField = document.getElementById("description");
 const codeOutput = document.getElementById("code-output");
 const copyBtn = document.getElementById("copyBtn");
 const statusMessage = document.getElementById("status-message");
+const taskSelector = document.getElementById("taskSelector");
 
 /**
  * Shows a status message to the user
@@ -37,6 +38,7 @@ function showStatus(message, type = "") {
  */
 async function generateCode() {
   const description = descriptionField.value.trim();
+  const taskType = taskSelector.value.trim().toLowerCase();
   
   // Validate input
   if (!description) {
@@ -59,7 +61,7 @@ async function generateCode() {
         "Content-Type": "application/json",
         // CSRF token would be added here in a production app
       },
-      body: JSON.stringify({ description })
+      body: JSON.stringify({ description, task_type: taskType })
     });
 
     const data = await response.json();

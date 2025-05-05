@@ -127,3 +127,32 @@ flask run
 ```
 
 Open your browser and navigate to `http://127.0.0.1:5000` to see the application in action.
+
+## Running Tests
+
+To run the tests using `pytest`, follow these steps:
+
+1. Ensure you have installed the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Run the tests:
+   ```bash
+   pytest
+   ```
+
+## Setting Up Rate Limiting
+
+To set up rate limiting using Flask-Limiter, follow these steps:
+
+1. Install the Flask-Limiter package:
+   ```bash
+   pip install Flask-Limiter
+   ```
+
+2. Configure rate limiting rules in `app.py` to limit requests per user or IP address.
+
+3. Apply rate limiting to specific routes using decorators.
+
+4. Customize error messages for rate limit exceedance.
