@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Simple Code Pal - A minimal code generator using Codepal.ai API">
+  <title>Simple Code Pal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <!-- Add CSP for security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Simple Code Pal</h1>
+    <p class="subtitle">Generate code snippets with minimal effort</p>
+    
+    <div class="input-section">
+      <label for="description">Describe the code you need:</label>
+      <textarea 
+        id="description" 
+        rows="6" 
+        placeholder="e.g. Create a Python function to reverse a string"
+        aria-label="Code description input"></textarea>
+      <button id="generateBtn" class="primary-btn">Generate Code</button>
+    </div>
+
+    <div class="output-section">
+      <label for="code-output">Generated Code Snippet:</label>
+      <pre><code id="code-output" aria-live="polite"></code></pre>
+      <button id="copyBtn" class="secondary-btn" hidden>Copy Code</button>
+      <div id="status-message" class="status" aria-live="polite"></div>
+    </div>
+    
+    <footer>
+      <p>Using Codepal.ai API | <a href="https://github.com/yourusername/simple-code-pal" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+    </footer>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
