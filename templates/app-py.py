@@ -64,7 +64,8 @@ def generate():
 
     except requests.RequestException as e:
         # Handle network errors, timeouts, and API errors
-        return jsonify({"error": f"API error: {str(e)}"}), 500
+        app.logger.error(f"API error: {str(e)}")  # Log the detailed error on the server
+        return jsonify({"error": "An internal error occurred. Please try again later."}), 500
 
 if __name__ == "__main__":
     # Use debug=False in production environments
