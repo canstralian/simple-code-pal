@@ -6,11 +6,9 @@
 [![Code style: PEP8](https://img.shields.io/badge/code%20style-PEP8-brightgreen.svg)](https://peps.python.org/pep-0008/)
 [![Security: CSP](https://img.shields.io/badge/security-CSP-green.svg)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/your-username/simple-code-pal/commits/main)
+[![Maintenance](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/canstralian/simple-code-pal/commits/main)
 
 A minimal code generator using the Codepal.ai API. This application allows users to describe the code they need and receive generated code snippets.
-
-![Simple Code Pal Screenshot](https://via.placeholder.com/800x450.png?text=Simple+Code+Pal+Screenshot)
 
 ## Features
 
@@ -20,8 +18,8 @@ A minimal code generator using the Codepal.ai API. This application allows users
 - Secure API key handling with environment variables
 - Mobile-responsive design
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/your-username/simple-code-pal)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/simple-code-pal)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/canstralian/simple-code-pal)
+![GitHub last commit](https://img.shields.io/github/last-commit/canstralian/simple-code-pal)
 ![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m793662933-e0ff2756491c293759a5e9a9)
 
 ## Tech Stack
